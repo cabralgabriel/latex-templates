@@ -2,7 +2,7 @@
 \chapter{ORIENTAÇÕES GERAIS}
 \label{chap:orientacoesGerais}
 
-Neste capítulo (que deve ser removido), são abordados detalhadamente os comandos para formatar o texto, criar listas, tabelas e figuras, inserir equações matemáticas, gerenciar referências bibliográficas.
+Neste capítulo são abordados detalhadamente os comandos para formatar o texto, criar listas, tabelas e figuras, inserir equações matemáticas, gerenciar referências bibliográficas.
 
 % -------------------------------- FORMATAÇÃO DE TEXTO -------------------------------- %
 \section{Formatação de Texto}
@@ -10,6 +10,8 @@ Neste capítulo (que deve ser removido), são abordados detalhadamente os comand
 
 \begin{itemize}
 \item \textbf{Negrito e Itálico:} Utilize os comandos \verb|\textbf{}| para negrito e \verb|\textit{}| para itálico. Exemplo: \textbf{texto em negrito} e \textit{texto em itálico}.
+
+\item \textbf{Aspas}: A palavra deve estar entre ``aspas simples duplas''.
 
 \item \textbf{Alinhamento do Texto:} Use \verb|\centering| para centralizar o texto, \verb|\raggedright| para alinhar à esquerda e \verb|\raggedleft| para alinhar à direita.
 
@@ -19,10 +21,10 @@ Neste capítulo (que deve ser removido), são abordados detalhadamente os comand
 
 \item \textbf{Quebras de Linha e Página:} Para quebrar linhas, utilize \verb|\\| e \verb|\newline|. Para quebrar páginas, utilize \verb|\newpage|.
 
-\item \textbf{Comentários:} Utilize \verb|%| para fazer comentários no código LaTeX.
+\item \textbf{Comentários:} Utilize \verb|%| para fazer comentários no código LaTeX. Para comentários longos utilize  \verb|\begin{comment} ... \end{comment}|.
 % Você pode deixar comentários para quem for ler seu código ou para servir como suas anotações ao longo do texto.
 
-\item \textbf{Espaços:} Utilize \verb|~| para criar espaços não quebráveis e \verb|\hspace{}| para ajustar o espaçamento horizontal.
+\item \textbf{Espaços:} Utilize \verb|~| para criar espaços não quebráveis.
 
 \end{itemize}
 
@@ -32,46 +34,21 @@ Neste capítulo (que deve ser removido), são abordados detalhadamente os comand
 \section{Listas}
 \label{sec:listas}
 
-Em documentos \LaTeX, podemos criar listas não numeradas (\textit{bullets}) e numeradas utilizando os ambientes \verb|itemize| e \verb|enumerate|, respectivamente.
+Em documentos \LaTeX, podemos criar listas não numeradas e numeradas utilizando os ambientes \verb|itemize| e \verb|enumerate|, respectivamente.
 
 \subsection{Listas não numeradas}
 \label{subsec:listasNaoNumeradas}
+\noindent
+Para criar listas não numeradas, use o ambiente \verb|itemize| e marque cada item com \verb|\item|.
 
-Para listas não numeradas, use o ambiente \verb|itemize| e marque cada item com \verb|\item|.
-
-\textbf{Exemplo:}
-\begin{verbatim}
-\begin{itemize}
-\item Item 1
-\item Item 2
-\end{itemize}
-\end{verbatim}
-
-\textbf{Resultado:}
-\begin{itemize}
-\item Item 1
-\item Item 2
-\end{itemize}
+\input{./dados/quadros/quadro2}
 
 \subsection{Listas numeradas}
 \label{subsec:listasNumeradas}
+\noindent
+Para criar listas numeradas, use o ambiente \verb|enumerate| e marque cada item com \verb|\item|.
 
-Para listas numeradas, use o ambiente \verb|enumerate| e marque cada item com \verb|\item|.
-
-\textbf{Exemplo:}
-\begin{verbatim}
-\begin{enumerate}
-\item Item 1
-\item Item 2
-\end{enumerate}
-\end{verbatim}
-
-\textbf{Resultado:}
-\begin{enumerate}
-\item Item 1
-\item Item 2
-\end{enumerate}
-
+\input{./dados/quadros/quadro3}
 
 % CITAÇÕES ----------------------------------------------------------
 \section{Citações}
@@ -98,7 +75,7 @@ Quando o trecho citado é longo (4 ou mais linhas) deve-se usar um parágrafo es
 \begin{citacao}
     Desse modo, opera-se uma ruptura decisiva entre a reflexividade filosófica, isto é a possibilidade do sujeito de pensar e de refletir, e a objetividade científica. Encontramo-nos num ponto em que o conhecimento científico está sem consciência. Sem consciência moral, sem consciência reflexiva e também subjetiva. Cada vez mais o desenvolvimento extraordinário do conhecimento científico vai tornar menos praticável a própria possibilidade de reflexão do sujeito sobre a sua pesquisa \cite[p.~28]{Silva2000}.
 \end{citacao}
-
+\noindent
 Para fazer a citação longa deve-se utilizar os seguintes comandos:
 \begin{verbatim}
 \begin{citacao}
@@ -113,27 +90,27 @@ No exemplo acima, para a chamada da referência o comando \verb|\cite[p.~28]{Sil
 \section{Referências Cruzadas}
 \label{sec:referenciasCruzadas}
 
-As referências cruzadas são uma funcionalidade essencial no \LaTeX{}, permitindo criar conexões automáticas entre diferentes partes do documento, como capítulos, seções, figuras, tabelas, equações e outros elementos numerados. Para utilizar referências cruzadas, é necessário incluir um rótulo (\textit{label}) em cada elemento que se deseja referenciar.
+As referências cruzadas são uma funcionalidade essencial no \LaTeX{}, permitindo criar conexões automáticas entre diferentes partes do documento, como capítulos, seções, figuras, tabelas, equações e outros elementos numerados. Para utilizar referências cruzadas, é necessário incluir um rótulo ({\ttfamily label}) em cada elemento que se deseja referenciar.
 
 \subsection{Inserindo um Rótulo}
-Para criar um rótulo, utilize o comando \verb|\label{nome}| no local desejado. O \verb|nome| é um identificador único que você atribui ao elemento. É recomendável utilizar nomes descritivos, como \verb|chap:orientacoesGerais| para um capítulo ou \verb|fig:exemplo| para uma figura. 
+Para criar um rótulo, utilize o comando \verb|\label{nome}| no local desejado. O \verb|nome| é um identificador único que você atribui ao elemento. É recomendável utilizar nomes descritivos, como \verb|chap:introducao| para um capítulo ou \verb|fig:exemplo| para uma figura. 
 
-Exemplo:
+\textbf{Exemplo:}
 \begin{verbatim}
 \section{Listas}
 \label{sec:listas}
 \end{verbatim}
 
 \subsection{Referenciando um Elemento}
-Para fazer referência a um elemento previamente rotulado, utilize os comandos \verb|\ref{nome}| ou \verb|\autoref{nome}|. O comando \verb|\ref{nome}| simplesmente mostra o número do elemento referenciado, enquanto \verb|\autoref{nome}| adiciona automaticamente o tipo do elemento (como "Capítulo", "Figura", "Tabela", etc.) antes do número. Por exemplo, ao utilizar \verb|\autoref{fig:exemplo}|, o resultado será "Fig. 1".
+Para fazer referência a um elemento previamente rotulado, utilize os comandos \verb|\ref{nome}|, \verb|\autoref{nome}| ou \verb|\cref{nome}|. O comando \verb|\ref{nome}| simplesmente mostra o número do elemento referenciado, o comando \verb|\autoref{nome}| adiciona automaticamente o tipo do elemento (como ``Capítulo'', ``Figura'', ``Equação'', etc.) antes do número, enquanto \verb|\cref{nome}| é similar ao comando anterior, mas o tipo do elemento é abreviado (como ``Cap.'', ``Fig.'', ``Eq.'', etc.).
 
-Exemplo:
+\textbf{Exemplo:}
 \begin{verbatim}
 Na \autoref{sec:listas} são abordadas informações sobre listas no documento.
 \end{verbatim}
 
-Resultado: \\
-"Na \autoref{sec:listas} são abordadas informações sobre listas no documento."
+\textbf{Resultado:} \\
+``Na \autoref{sec:listas} são abordadas informações sobre listas no documento.''
 
 \subsection{Elementos com rótulos}
 Aqui estão alguns elementos comuns que podem receber rótulos para referências cruzadas:
@@ -149,22 +126,20 @@ Aqui estão alguns elementos comuns que podem receber rótulos para referências
 \vspace{0.5cm}
 Com o uso adequado de rótulos e referências cruzadas, você pode criar um documento bem estruturado e de fácil navegação no \LaTeX{}. 
 
-
-
 % FIGURAS-----------------------------------------------------------------------
 \section{Figuras}
 \label{sec:figuras}
 
-Exemplo de como inserir a \autoref{fig:figura-exemplo-1}. Também pode ser usado \cref{fig:figura-exemplo-1}. As figuras aparecem automaticamente na lista de figuras. Os arquivos das imagens devem ser armazenados no diretório de "/dados".
+Exemplo de como inserir a \autoref{fig:figura-exemplo-1}, que pode ser referenciado como \cref{fig:figura-exemplo-1}. As figuras aparecem automaticamente na lista de figuras. Os arquivos das imagens devem ser armazenados no diretório de ``/dados''.
 
 \begin{figure}[!htb]
     \centering
     \caption{Exemplo de Figura}
-    \sbox0{\includegraphics[width=0.5\textwidth]{./dados/figuras/figura1}}% measure width
+    \sbox0{\includegraphics[width=0.5\textwidth]{./dados/figuras/figura1}}
     \begin{minipage}{\wd0}
     \usebox0
         \label{fig:figura-exemplo-1}
-        \fonte{\citeonline{IRL2014}}
+        \fonte{elaborado pelo autor.}
     \end{minipage}
 \end{figure}
 
@@ -175,7 +150,7 @@ Exemplo de como inserir a \autoref{fig:figura-exemplo-1}. Também pode ser usado
 \label{sec:tabelas}
 
 Exemplo de como inserir o \autoref{qua:quadro-exemplo1} e a \autoref{tab:tabela-exemplo1} (ou \cref{tab:tabela-exemplo1}). Ambos aparecem automaticamente nas suas respectivas listas.
-Ambos os elementos (Quadros e Tabelas) devem ser criados em arquivos separados para facilitar manutenção e armazenados no diretório de "/dados".
+Ambos os elementos (Quadros e Tabelas) devem ser criados em arquivos separados para facilitar manutenção e armazenados no diretório de ``/dados".
 
 \input{./dados/quadros/quadro1}
 
@@ -195,10 +170,23 @@ Exemplo de como inserir a \autoref{eq:equacao-exemplo1} e a \cref{eq:equacao-exe
     ,
 \end{equation}
 
-\begin{equation}
+\begin{align}
     \phi_E  = \int \limits_{A} \Vec{E_1}\cdot (-\Hat{n}) \, dA'\ + \int \limits_{A} \Vec{E_2}\cdot \Hat{n} \, dA'\
     \label{eq:equacao-exemplo2}
-\end{equation}
+\end{align}
+\noindent
+A numeração das equações é inserida e atualizada automaticamente. É possível remover o número de uma equação ao adicionar um asterisco no parâmetro  {\ttfamily equation},
+
+\begin{equation*}
+    \oint \limits_S \Vec{E}\cdot d \Vec{A}\ =
+    \frac{Q_{\mathrm{enc}}}{\varepsilon_0}
+    .
+\end{equation*}
+
+Existem outros parâmetros para inserir equações, como o {\ttfamily align},  {\ttfamily split}.
+Além disso, o ambiente matemático pode ser utilizado ao longo do texto ao envolver a equação com cifrão (\$). Por exemplo, a equação $ dE_x = dE \cos\theta $, pode ser obtida como
+\verb|$ dE_x = dE \cos\theta $|.
+
 
 % ALGORITMOS-----------------------------------------------------------------------
 \section{Algoritmos}
@@ -206,7 +194,7 @@ Exemplo de como inserir a \autoref{eq:equacao-exemplo1} e a \cref{eq:equacao-exe
 
 Exemplo de como inserir um algoritmo. Para inserção de algoritmos utiliza-se o pacote {\ttfamily algorithm2e} que já está devidamente configurado dentro do template.
 
-Os algoritmos devem ser criados em arquivos separados para facilitar manutenção e armazenados no diretório de "/dados". \\
+Os algoritmos devem ser criados em arquivos separados para facilitar manutenção e armazenados no diretório de ``/dados''. \\
 \input{./dados/algoritmos/algoritmo1}
 
 
@@ -214,7 +202,7 @@ Os algoritmos devem ser criados em arquivos separados para facilitar manutençã
 \section{Referências bibliográficas}
 \label{sec:referenciasBibliograficas}
 
-A bibliografia é feita no padrão \textsc{Bib}\TeX{}. As referências são colocadas em um arquivo separado. Neste template as referências são armazenadas no arquivo "base-referencias.bib".
+A bibliografia é feita no padrão \textsc{Bib}\TeX{}. Para facilitar a manutenção, as referências são colocadas em um arquivo separado. Neste \textit{template} as referências são armazenadas no arquivo \verb|base-referencias.bib|.
 
 Existem diversas categorias documentos e materiais componentes da bibliografia. A classe abn\TeX{} define as seguintes categorias (entradas):
 
@@ -236,4 +224,4 @@ Existem diversas categorias documentos e materiais componentes da bibliografia. 
 @misc
 \end{verbatim}
 
-Cada categoria (entrada) é formatada pelo pacote \citeonline{abnTeX22014d} de uma forma específica. Algumas entradas foram introduzidas especificamente para atender à norma \citeonline{NBR6023:2002}, são elas: \verb|@monography|, \verb|@journalpart|,\verb|@patent|. As demais entradas são padrão \textsc{Bib}\TeX{}. Para maiores detalhes, refira-se a \citeonline{abnTeX22014d}, \citeonline{abnTeX22014b}, \citeonline{abnTeX22014c}.
+Cada categoria (entrada) é formatada pelo pacote \citeonline{abnTeX22014d} de uma forma específica. Algumas entradas foram introduzidas especificamente para atender à norma \citeonline{NBR6023:2002}, são elas: \verb|@monography|, \verb|@journalpart|, \verb|@patent|. As demais entradas são padrão \textsc{Bib}\TeX{}.
