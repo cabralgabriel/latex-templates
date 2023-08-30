@@ -25,8 +25,8 @@
 % Opções da classe memoir
     12pt,                     % Tamanho da fonte
     a4paper,                  % Tamanho do papel.
-    sumario=abnt-6027-2012,
-    %sumario=tradicional,      % Seleciona o sumário tradicional
+    sumario=abnt-6027-2012,   % Sumario padrão ABNT
+    %sumario=tradicional,     % Seleciona o sumário tradicional
 % Opções do pacote babel
     brazil,                   % Idioma do documento
 }{abntex2}
@@ -39,7 +39,7 @@
 \RequirePackage{chngcntr}
 
 % -----------------------------------------------------------------------------
-% Configurações gerais
+%                           CONFIGURAÇÕES GERAIS
 % -----------------------------------------------------------------------------
 
 % Retira o espaço extra desnecessário nas frases
@@ -58,7 +58,7 @@
 \renewcommand*{\backrefalt}[4]
 
 % -----------------------------------------------------------------------------
-% Numeração das figuras e equação
+%                       NUMERAÇÃO DAS FIGURAS E EQUAÇÃO
 % -----------------------------------------------------------------------------
 
 % Define a numeração das equações de forma sequencial
@@ -68,7 +68,7 @@
 \counterwithin{figure}{chapter}
 
 % -----------------------------------------------------------------------------
-% Comandos de dados
+%                              COMANDOS DE DADOS
 % -----------------------------------------------------------------------------
 
 % Comandos de dados - Departamento
@@ -150,7 +150,7 @@
 \newcommand{\dataaprovacao}[1]{\renewcommand{\imprimirdataaprovacao}{#1}}
 
 % -----------------------------------------------------------------------------
-% Estilo de elementos
+%                       ESTILOS DE ELEMENTOS
 % -----------------------------------------------------------------------------
 
 % Elementos pré-textuais
@@ -182,7 +182,7 @@
 }
 
 % -----------------------------------------------------------------------------
-% Objetos flutuantes
+%                           OBJETOS FLUTUANTES
 % -----------------------------------------------------------------------------
 
 % Comando que trata a fonte nos objetos flutuantes
@@ -204,7 +204,7 @@
 }
 
 % -----------------------------------------------------------------------------
-% Parágrafos
+%                              PARÁGRAFOS
 % -----------------------------------------------------------------------------
 
 % Tamanho da indentação do parágrafo
@@ -214,7 +214,7 @@
 \setlength{\parskip}{0.0cm}
 
 % -----------------------------------------------------------------------------
-% Fontes
+%                               FONTES
 % -----------------------------------------------------------------------------
 
 % Redefinição de fontes
@@ -238,7 +238,7 @@
 
 
 % -----------------------------------------------------------------------------
-% Sumário
+%                                 SUMÁRIO
 % -----------------------------------------------------------------------------
 
 % Travessão no sumário para apêndices e anexos
@@ -254,7 +254,7 @@
 \renewcommand{\cftsubsubsubsectionfont}{\normalfont}
 
 % -----------------------------------------------------------------------------
-% Listas
+%                                LISTAS 
 % -----------------------------------------------------------------------------
 
 % Define os títulos das listas
@@ -284,7 +284,7 @@
 \renewcommand*{\cftquadroaftersnum}{\hfill--\hfill}
 
 % -----------------------------------------------------------------------------
-% Capa
+%                                    CAPA
 % -----------------------------------------------------------------------------
 \makeatletter
 \renewcommand{\imprimircapa}{
@@ -330,7 +330,7 @@
 \makeatother
 
 % -----------------------------------------------------------------------------
-% Folha de rosto
+%                               FOLHA DE ROSTO
 % -----------------------------------------------------------------------------
 \makeatletter
 \renewcommand{\folhaderostocontent}
@@ -394,7 +394,7 @@
 
 
 % -----------------------------------------------------------------------------
-% Folha de aprovação
+%                               FOLHA DE APROVAÇÃO
 % -----------------------------------------------------------------------------
 \makeatletter
 \newcommand{\imprimirfolhadeaprovacao}
@@ -469,7 +469,7 @@ Aprovado em \imprimirdataaprovacao
 \nopagebreak
 
 % -----------------------------------------------------------------------------
-% Dedicatória
+%                               DEDICATÓRIA
 % -----------------------------------------------------------------------------
 \renewenvironment{dedicatoria}[1][]
 {%
@@ -492,7 +492,7 @@ Aprovado em \imprimirdataaprovacao
 }
 
 % ----------------------------------------------------------------------------
-% Epígrafe
+%                                   EPÍGRAFE
 % ----------------------------------------------------------------------------
 \renewenvironment{epigrafe}[1][]
 {%
