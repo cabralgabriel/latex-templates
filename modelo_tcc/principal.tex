@@ -16,22 +16,22 @@
 % ---------------------------------------------------------------------------------------------------------------
 \documentclass[%twoside,                   % Impressão em frente e verso
     	        oneside,                   % Impressão apenas frente
-]{configuracoes/abntex2}
+]{configuracoes/norma-abntex2}
 
 % ---------------------------------------------------------------------------------------------------------------
 %                                        INCLUI ARQUIVOS DE CONFIGURAÇÕES
 % ---------------------------------------------------------------------------------------------------------------
-\include{configuracoes/pacotes}
-\include{configuracoes/config-pdf}
+\input{configuracoes/pacotes}
+\input{configuracoes/config-pdf}
 
 % ---------------------------------------------------------------------------------------------------------------
 %                                 INCLUI ARQUIVOS DO TRABALHO DE CONCLUSÃO DE CURSO
 % ---------------------------------------------------------------------------------------------------------------
 
 % Insere capa e folha de rosto
-\include{estrutura/pre-textuais/capa}
-\include{estrutura/pre-textuais/folha-rosto}
-\include{estrutura/pre-textuais/folha-aprovacao}
+\input{estrutura/pre-textuais/capa}
+\input{estrutura/pre-textuais/folha-rosto}
+\input{estrutura/pre-textuais/folha-aprovacao}
 
 \begin{document}
 
@@ -58,7 +58,7 @@
     \textual
     % Insere elementos textuais
     \include{estrutura/textuais/introducao}                		         % Introdução
-    \include{estrutura/textuais/desenvolvimento/fundamentacao}           % Revisão de Literatura
+    \include{estrutura/textuais/desenvolvimento/fundamentacao}           % Fundamentação teórica
     \include{estrutura/textuais/desenvolvimento/metodologia}             % Metodologia
     \include{estrutura/textuais/desenvolvimento/resultados}              % Resultados
     \include{estrutura/textuais/desenvolvimento/orientacoes}             % Orientações gerais (remover)

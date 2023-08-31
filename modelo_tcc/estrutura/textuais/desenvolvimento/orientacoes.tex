@@ -1,36 +1,40 @@
-% ORIENTAÇÕES GERAIS------------------------------------------------------------
+% ----------------------------------------------------------------------------
+%                               ORIENTAÇÕES GERAIS
+% ----------------------------------------------------------------------------
 \chapter{ORIENTAÇÕES GERAIS}
 \label{chap:orientacoesGerais}
 
 Neste capítulo são abordados detalhadamente os comandos para formatar o texto, criar listas, tabelas e figuras, inserir equações matemáticas, gerenciar referências bibliográficas.
 
-% -------------------------------- FORMATAÇÃO DE TEXTO -------------------------------- %
+% ----------------------------------------------------------------------------
+%                                FORMATAÇÃO DE TEXTO
+% ----------------------------------------------------------------------------
 \section{Formatação de Texto}
 \label{sec:formatacaoTexto}
 
 \begin{itemize}
-\item \textbf{Negrito e Itálico:} Utilize os comandos \verb|\textbf{}| para negrito e \verb|\textit{}| para itálico. Exemplo: \textbf{texto em negrito} e \textit{texto em itálico}.
-
-\item \textbf{Aspas}: A palavra deve estar entre ``aspas simples duplas''.
-
-\item \textbf{Alinhamento do Texto:} Use \verb|\centering| para centralizar o texto, \verb|\raggedright| para alinhar à esquerda e \verb|\raggedleft| para alinhar à direita.
-
-\item \textbf{Parágrafos e Espaçamento:} Para criar novos parágrafos, deixe uma linha em branco.
-
-\item \textbf{Recuo de Parágrafo:} Se desejar evitar o recuo em um novo parágrafo, utilize o comando \verb|\noindent| no início.
-
-\item \textbf{Quebras de Linha e Página:} Para quebrar linhas, utilize \verb|\\| e \verb|\newline|. Para quebrar páginas, utilize \verb|\newpage|.
-
-\item \textbf{Comentários:} Utilize \verb|%| para fazer comentários no código LaTeX. Para comentários longos utilize  \verb|\begin{comment} ... \end{comment}|.
-% Você pode deixar comentários para quem for ler seu código ou para servir como suas anotações ao longo do texto.
-
-\item \textbf{Espaços:} Utilize \verb|~| para criar espaços não quebráveis.
+    \item \textbf{Negrito e Itálico:} Utilize os comandos \verb|\textbf{}| para negrito e \verb|\textit{}| para itálico. Exemplo: \textbf{texto em negrito} e \textit{texto em itálico}.
+    
+    \item \textbf{Aspas}: A palavra deve estar entre ``aspas simples duplas''.
+    
+    \item \textbf{Alinhamento do Texto:} Use \verb|\centering| para centralizar o texto, \verb|\raggedright| para alinhar à esquerda e \verb|\raggedleft| para alinhar à direita.
+    
+    \item \textbf{Parágrafos e Espaçamento:} Para criar novos parágrafos, deixe uma linha em branco.
+    
+    \item \textbf{Recuo de Parágrafo:} Se desejar evitar o recuo em um novo parágrafo, utilize o comando \verb|\noindent| no início.
+    
+    \item \textbf{Quebras de Linha e Página:} Para quebrar linhas, utilize \verb|\\| e \verb|\newline|. Para quebrar páginas, utilize \verb|\newpage|.
+    
+    \item \textbf{Comentários:} Utilize \verb|%| para fazer comentários no código LaTeX. Para comentários longos utilize  \verb|\begin{comment} ... \end{comment}|.
+    % Você pode deixar comentários para quem for ler seu código ou para servir como suas anotações ao longo do texto.
+    
+    \item \textbf{Espaços:} Utilize \verb|~| para criar espaços não quebráveis.
 
 \end{itemize}
 
-
-% -------------------------------- LISTAS -------------------------------- %
-
+% ----------------------------------------------------------------------------
+%                                   LISTAS 
+% ----------------------------------------------------------------------------
 \section{Listas}
 \label{sec:listas}
 
@@ -50,7 +54,9 @@ Para criar listas numeradas, use o ambiente \verb|enumerate| e marque cada item 
 
 \input{./dados/quadros/quadro3}
 
-% CITAÇÕES ----------------------------------------------------------
+% ----------------------------------------------------------------------------
+%                                   CITAÇÕES 
+% ----------------------------------------------------------------------------
 \section{Citações}
 \label{sec:citacoes}
 
@@ -63,8 +69,8 @@ A citação indireta é a transcrição das ideias de um autor, utilizando suas 
 
 \textbf{Exemplos:}
 \begin{itemize}
-\item A epistemologia baseada na biologia considera que... \cite{Maturana2003}
-\item Para \citeonline{Barbosa2004}, a citação indireta deve ser utilizada quando...
+    \item  Uma compreensão física é uma coisa completamente não-matemática, imprecisa e inexata, mas absolutamente necessária para um físico \cite{feynman}.
+    \item Para \citeonline{feynman}, os físicos precisam ter flexibilidade para olhar os problemas sob diversos pontos de vista.
 \end{itemize}
 
 \subsection{Citação direta}
@@ -73,20 +79,23 @@ A citação indireta é a transcrição das ideias de um autor, utilizando suas 
 Quando o trecho citado é longo (4 ou mais linhas) deve-se usar um parágrafo específico para a citação, na forma de um texto recuado (4 cm da margem esquerda), com tamanho de letra menor e espaçamento entrelinhas simples. Exemplo de citação longa:
 \\
 \begin{citacao}
-    Desse modo, opera-se uma ruptura decisiva entre a reflexividade filosófica, isto é a possibilidade do sujeito de pensar e de refletir, e a objetividade científica. Encontramo-nos num ponto em que o conhecimento científico está sem consciência. Sem consciência moral, sem consciência reflexiva e também subjetiva. Cada vez mais o desenvolvimento extraordinário do conhecimento científico vai tornar menos praticável a própria possibilidade de reflexão do sujeito sobre a sua pesquisa \cite[p.~28]{Silva2000}.
+    Para qualquer campo eletrostático, não existe nenhum ponto de equilíbrio estável – exceto exatamente sobre uma outra carga. Usando a lei de Gauss, é fácil ver a razão disto. Primeiro, para uma carga estar em equilíbrio em qualquer ponto particular $P_0$, o campo ali deve ser zero. Segundo, para que este equilíbrio seja estável, devemos exigir que, se afastarmos a carga de $P_0$ em qualquer direção, surja uma força restauradora direcionada em oposição ao deslocamento. O campo elétrico em todos os pontos vizinhos deve apontar na direção de $P_0$. Mas, como podemos ver facilmente, se não existir nenhuma carga em $P_0$ isto é uma violação da lei de Gauss \cite[p.~51]{feynman}.
+
+   % Desse modo, opera-se uma ruptura decisiva entre a reflexividade filosófica, isto é a possibilidade do sujeito de pensar e de refletir, e a objetividade científica. Encontramo-nos num ponto em que o conhecimento científico está sem consciência. Sem consciência moral, sem consciência reflexiva e também subjetiva. Cada vez mais o desenvolvimento extraordinário do conhecimento científico vai tornar menos praticável a própria possibilidade de reflexão do sujeito sobre a sua pesquisa \cite[p.~28]{Silva2000}.
 \end{citacao}
 \noindent
 Para fazer a citação longa deve-se utilizar os seguintes comandos:
 \begin{verbatim}
-\begin{citacao}
-<texto da citacao>
-\end{citacao}
+    \begin{citacao}
+    <texto da citacao>
+    \end{citacao}
 \end{verbatim}
 
 No exemplo acima, para a chamada da referência o comando \verb|\cite[p.~28]{Silva2000}| foi utilizado, visto que os nomes dos autores não são parte do trecho citado. É necessário também indicar o número da página da obra citada que contém o trecho citado.
 
-
-% SOBRE AS ILUSTRAÇÕES----------------------------------------------------------
+% ----------------------------------------------------------------------------
+%                              REFERÊNCIAS CRUZADAS
+% ----------------------------------------------------------------------------
 \section{Referências Cruzadas}
 \label{sec:referenciasCruzadas}
 
@@ -97,8 +106,8 @@ Para criar um rótulo, utilize o comando \verb|\label{nome}| no local desejado. 
 
 \textbf{Exemplo:}
 \begin{verbatim}
-\section{Listas}
-\label{sec:listas}
+    \section{Listas}
+    \label{sec:listas}
 \end{verbatim}
 
 \subsection{Referenciando um Elemento}
@@ -106,7 +115,7 @@ Para fazer referência a um elemento previamente rotulado, utilize os comandos \
 
 \textbf{Exemplo:}
 \begin{verbatim}
-Na \autoref{sec:listas} são abordadas informações sobre listas no documento.
+    Na \autoref{sec:listas} são abordadas informações sobre listas no documento.
 \end{verbatim}
 
 \textbf{Resultado:} \\
@@ -114,19 +123,20 @@ Na \autoref{sec:listas} são abordadas informações sobre listas no documento.
 
 \subsection{Elementos com rótulos}
 Aqui estão alguns elementos comuns que podem receber rótulos para referências cruzadas:
-
 \begin{itemize}
-\item Capítulos: \texttt{\textbackslash chapter\{...\}\textbackslash label\{chap:nome\}}
-\item Seções: \texttt{\textbackslash section\{...\}\textbackslash label\{sec:nome\}}
-\item Subseções: \texttt{\textbackslash subsection\{...\}\textbackslash label\{subsec:nome\}}
-\item Figuras: \texttt{\textbackslash begin\{figure\}...\textbackslash caption\{...\}\textbackslash label\{fig:nome\}\textbackslash end\{figure\}}
-\item Tabelas: \texttt{\textbackslash begin\{table\}...\textbackslash caption\{...\}\textbackslash label\{tab:nome\}\textbackslash end\{table\}}
-\item Equações: \texttt{\textbackslash begin\{equation\}...\textbackslash label\{eq:nome\}\textbackslash end\{equation\}}
+    \item Capítulos: \texttt{\textbackslash chapter\{...\}\textbackslash label\{chap:nome\}}
+    \item Seções: \texttt{\textbackslash section\{...\}\textbackslash label\{sec:nome\}}
+    \item Subseções: \texttt{\textbackslash subsection\{...\}\textbackslash label\{subsec:nome\}}
+    \item Figuras: \texttt{\textbackslash begin\{figure\}...\textbackslash caption\{...\}\textbackslash label\{fig:nome\}\textbackslash end\{figure\}}
+    \item Tabelas: \texttt{\textbackslash begin\{table\}...\textbackslash caption\{...\}\textbackslash label\{tab:nome\}\textbackslash end\{table\}}
+    \item Equações: \texttt{\textbackslash begin\{equation\}...\textbackslash label\{eq:nome\}\textbackslash end\{equation\}}
 \end{itemize}
 \vspace{0.5cm}
 Com o uso adequado de rótulos e referências cruzadas, você pode criar um documento bem estruturado e de fácil navegação no \LaTeX{}. 
 
-% FIGURAS-----------------------------------------------------------------------
+% ----------------------------------------------------------------------------
+%                                   FIGURAS
+% ----------------------------------------------------------------------------
 \section{Figuras}
 \label{sec:figuras}
 
@@ -137,20 +147,21 @@ Exemplo de como inserir a \autoref{fig:figura-exemplo-1}, que pode ser referenci
     \caption{Exemplo de Figura}
     \sbox0{\includegraphics[width=0.5\textwidth]{./dados/figuras/figura1}}
     \begin{minipage}{\wd0}
-    \usebox0
+        \usebox0
+        \vspace{-20pt}
         \label{fig:figura-exemplo-1}
         \fonte{elaborado pelo autor.}
     \end{minipage}
 \end{figure}
 
-
-
-% QUADROS E TABELAS---------------------------------------------------------------
+% ----------------------------------------------------------------------------
+%                                QUADROS E TABELAS
+% ----------------------------------------------------------------------------
 \section{Quadros e tabelas}
-\label{sec:tabelas}
+\label{sec:quadrosTabelas}
 
-Exemplo de como inserir o \autoref{qua:quadro-exemplo1} e a \autoref{tab:tabela-exemplo1} (ou \cref{tab:tabela-exemplo1}). Ambos aparecem automaticamente nas suas respectivas listas.
-Ambos os elementos (Quadros e Tabelas) devem ser criados em arquivos separados para facilitar manutenção e armazenados no diretório de ``/dados".
+Exemplo de como inserir o \autoref{qua:quadro-exemplo1} e a \cref{tab:tabela-exemplo1}. Ambos aparecem automaticamente nas suas respectivas listas.
+Os elementos (Quadros e Tabelas) devem ser criados em arquivos separados para facilitar manutenção e armazenados no diretório de ``/dados".
 
 \input{./dados/quadros/quadro1}
 
@@ -158,7 +169,9 @@ A diferença entre quadro e tabela está no fato que um quadro é formado por li
 
 \input{./dados/tabelas/tabela1}
 
-% EQUAÇÕES-----------------------------------------------------------------------
+% ----------------------------------------------------------------------------
+%                                  EQUAÇÕES
+% ----------------------------------------------------------------------------
 \section{Equações}
 \label{sec:equacoes}
 
@@ -171,11 +184,11 @@ Exemplo de como inserir a \autoref{eq:equacao-exemplo1} e a \cref{eq:equacao-exe
 \end{equation}
 
 \begin{align}
-    \phi_E  = \int \limits_{A} \Vec{E_1}\cdot (-\Hat{n}) \, dA'\ + \int \limits_{A} \Vec{E_2}\cdot \Hat{n} \, dA'\
+    \phi_E  = \int \limits_{A} \Vec{E_1}\cdot (-\Hat{n}) \, dA'\ + \int \limits_{A} \Vec{E_2}\cdot \Hat{n} \, dA'\ ,
     \label{eq:equacao-exemplo2}
 \end{align}
 \noindent
-A numeração das equações é inserida e atualizada automaticamente. É possível remover o número de uma equação ao adicionar um asterisco no parâmetro  {\ttfamily equation},
+A numeração das equações é inserida e atualizada automaticamente. É possível remover o número de uma equação ao adicionar um asterisco no parâmetro  {\ttfamily equation}, como em
 
 \begin{equation*}
     \oint \limits_S \Vec{E}\cdot d \Vec{A}\ =
@@ -184,21 +197,21 @@ A numeração das equações é inserida e atualizada automaticamente. É possí
 \end{equation*}
 
 Existem outros parâmetros para inserir equações, como o {\ttfamily align},  {\ttfamily split}.
-Além disso, o ambiente matemático pode ser utilizado ao longo do texto ao envolver a equação com cifrão (\$). Por exemplo, a equação $ dE_x = dE \cos\theta $, pode ser obtida como
-\verb|$ dE_x = dE \cos\theta $|.
+Além disso, o ambiente matemático pode ser utilizado ao longo do texto ao envolver a equação com cifrão (\$). Por exemplo, como feito com a equação $ dE_x = dE \cos\theta $.
 
-
-% ALGORITMOS-----------------------------------------------------------------------
+% ----------------------------------------------------------------------------
+%                                   ALGORITMOS
+% ----------------------------------------------------------------------------
 \section{Algoritmos}
 \label{sec:algoritmos}
 
 Exemplo de como inserir um algoritmo. Para inserção de algoritmos utiliza-se o pacote {\ttfamily algorithm2e} que já está devidamente configurado dentro do template.
-
 Os algoritmos devem ser criados em arquivos separados para facilitar manutenção e armazenados no diretório de ``/dados''. \\
 \input{./dados/algoritmos/algoritmo1}
 
-
-% SOBRE AS REFERÊNCIAS BIBLIOGRÁFICAS-------------------------------------------------------
+% ----------------------------------------------------------------------------
+%                           REFERÊNCIAS BIBLIOGRÁFICAS
+% ----------------------------------------------------------------------------
 \section{Referências bibliográficas}
 \label{sec:referenciasBibliograficas}
 

@@ -16,7 +16,7 @@
 % -----------------------------------------------------------------------------
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{configuracoes/abntex2}[2016/07/07 v1.0]
+\ProvidesClass{configuracoes/norma-abntex2}[2016/07/07 v1.0]
 
 % Repassa os parâmetros ao abntex2
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{abntex2}}
