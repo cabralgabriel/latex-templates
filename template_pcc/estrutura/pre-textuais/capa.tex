@@ -1,0 +1,71 @@
+% ----------------------------------------------------------------------------
+%                                   CAPA
+% ----------------------------------------------------------------------------
+% Caso algum dos campos não se aplique ao seu trabalho, como por exemplo,
+% se não houve coorientador, apenas deixe vazio.
+% Exemplos:
+% \coorientador{}
+% \departamento{}
+
+% ----------------------------------------------------------------------------
+%                               DADOS DO TRABALHO
+% ----------------------------------------------------------------------------
+\titulo{Título do Trabalho}
+\subtitulo{\textnormal{subtítulo do trabalho}}
+\autor{NOME COMPLETO DO AUTOR}
+\autorcitacao{SOBRENOME, Nome} % Sobrenome em maiúsculo
+\local{Local}
+\data{Ano}
+
+% ----------------------------------------------------------------------------
+%                              NATUREZA DO TRABALHO
+% ----------------------------------------------------------------------------
+% Opções:
+% - Projeto de Trabalho de Conclusão de Curso de graduação
+% - Monografia de Trabalho de Conclusão de Curso (se for Graduação)
+% - Dissertação (se for Mestrado)
+% - Tese (se for Doutorado)
+% - Projeto de Qualificação (se for Mestrado ou Doutorado)
+\projeto{Monografia de Trabalho de Conclusão de Curso}
+
+% ----------------------------------------------------------------------------
+%                               TÍTULO ACADÊMICO
+% ----------------------------------------------------------------------------
+% Opções:
+% - Bacharel ou Tecnólogo (Se a natureza for Trabalho de Conclusão de Curso)
+% - Mestre (Se a natureza for Dissertação)
+% - Doutor (Se a natureza for Tese)
+\tituloAcademico{Título Acadêmico}
+
+% ----------------------------------------------------------------------------
+%                      ÁREA DE CONCENTRAÇÃO E LINHA DE PESQUISA
+% ----------------------------------------------------------------------------
+% Se a natureza for Trabalho de Conclusão de Curso, deixe ambos os campos vazios
+% Se for programa de Pós-graduação, indique a área de concentração e a linha de pesquisa
+\areaconcentracao{}
+\linhapesquisa{}
+
+% ----------------------------------------------------------------------------
+%                               DADOS DA INSTITUIÇÃO
+% ----------------------------------------------------------------------------
+% Se a natureza for Trabalho de Conclusão de Curso, coloque o nome do curso de graduação em "programa"
+% Formato para o logo da Instituição: \logoinstituicao{<escala>}{<caminho/nome do arquivo>}
+\instituicao{Nome da Universidade}
+\departamento{Nome do Departamento} % Deixa em branco caso não exista departamento
+\programa{Nome do Programa}
+\logoinstituicao{0.2}{dados/figuras/logo-instituicao.png}
+
+% ----------------------------------------------------------------------------
+%                              DADOS DOS ORIENTADORES
+% ----------------------------------------------------------------------------
+\orientador[Orientador:]{Nome do orientador} 
+\instOrientador{Instituição do orientador}
+
+\coorientador[Coorientadora:]{Nome da coorientadora}
+\instCoorientador{Instituição da coorientadora}
+
+% Quando existir mais de um coorientador
+% \coorientador[Coorientadores:]{Prof. Me. XXXXXX \newline
+% Universidade XXXXXX - Câmpus XXXXXX \newline
+% \newline Prof. Dr. XXXXXX. 
+% \newline Universidade XXXXXX - Câmpus XXXXXX}

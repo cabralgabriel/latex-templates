@@ -1,0 +1,61 @@
+% ---------------------------------------------------------------------------------------------------------------
+%                       TEMPLATE PARA PROJETO DE CONCLUSÃO DE CURSO
+% ---------------------------------------------------------------------------------------------------------------
+% Projeto Original: Template com Customização da classe abnTeX2 para as normas da UTFPR 
+% Autores: Diego Marczal
+% 	       Michael Vornes <https://github.com/mvornes>
+%
+% Modificado por: Gabriel Cabral <https://github.com/gabryus>
+%----------------------------------------------------------------------------------------------------------------
+% Codificação: UTF-8
+% LaTeX:  abnTeX2
+% ---------------------------------------------------------------------------------------------------------------
+%
+% Este template possui apenas os elementos mínimos necessários para um Projeto de Conclusão de Curso (PCC).
+% Após a entrega do PCC, inicie seu TCC copiando a redação deste projeto para o template de TCC, que possui 
+% todos os elementos obrigatórios e opcionais de uma monografia.
+%
+% ---------------------------------------------------------------------------------------------------------------
+%                                          CARREGA CLASSE PERSONALIZADA
+% ---------------------------------------------------------------------------------------------------------------
+\documentclass[%twoside,                   % Impressão em frente e verso
+    	        oneside,                   % Impressão apenas frente
+]{configuracoes/norma-abntex2}
+
+% ---------------------------------------------------------------------------------------------------------------
+%                                        INCLUI ARQUIVOS DE CONFIGURAÇÕES
+% ---------------------------------------------------------------------------------------------------------------
+\input{configuracoes/pacotes}
+\input{configuracoes/config-pdf}
+
+% ---------------------------------------------------------------------------------------------------------------
+%                                 INCLUI ARQUIVOS DO PROJETO DE CONCLUSÃO DE CURSO
+% ---------------------------------------------------------------------------------------------------------------
+
+% Insere capa e folha de rosto
+\input{estrutura/pre-textuais/capa}
+\input{estrutura/pre-textuais/folha-rosto}
+
+\begin{document}
+
+    \pretextual
+    \imprimircapa                                     % Comando para imprimir Capa
+    \imprimirfolhaderosto{}                           % Comando para imprimir Folha de rosto
+    
+    % Insere elementos pré-textuais
+    \include{estrutura/pre-textuais/resumo}             		% Resumo em Português
+    \include{estrutura/pre-textuais/sumario}               		% Sumário
+    
+    \textual
+    % Insere elementos textuais
+    \include{estrutura/textuais/introducao}                		         % Introdução
+    \include{estrutura/textuais/desenvolvimento/fundamentacao}           % Fundamentação teórica
+    \include{estrutura/textuais/desenvolvimento/metodologia}             % Metodologia
+    \include{estrutura/textuais/desenvolvimento/cronograma}              % Cronograma
+    \include{estrutura/textuais/desenvolvimento/orientacoes}             % Orientações gerais (remover)
+    
+    \postextual
+    % Insere elementos pós-textuais
+    \include{estrutura/pos-textuais/referencias}           			   % Referências
+
+\end{document}
