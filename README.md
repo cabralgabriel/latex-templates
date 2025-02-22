@@ -15,7 +15,7 @@ A pasta `template_tcc` contém um modelo configurado com os elementos obrigatór
 ### PCC
 A pasta `template_pcc` oferece um modelo com os elementos mínimos necessários para a entrega de um PCC.  
 
-##  Instalação
+##  Utilização
 
 1. Clone ou faça o download deste repositório.  
 2. Acesse a pasta correspondente ao modelo desejado (`template_tcc` ou `template_pcc`).  
