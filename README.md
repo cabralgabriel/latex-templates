@@ -1,29 +1,26 @@
-# 📄 Repositório de Modelos LaTeX 📑
+<h1 align="center">
+LaTeX Templates
+</h1>
 
-Este repositório contém modelos prontos para uso em LaTeX para trabalhos acadêmicos, incluindo Trabalhos de Conclusão de Curso (TCC) e Projetos de Conclusão de Curso (PCC) que seguem as normas da ABNT (Associação Brasileira de Normas Técnicas).
 
-## 📝 O Que é LaTeX?
+Este repositório contém modelos prontos para uso em LaTeX para trabalhos acadêmicos, incluindo Trabalhos de Conclusão de Curso (TCC) e Projetos de Conclusão de Curso (PCC), seguindo as normas da ABNT (Associação Brasileira de Normas Técnicas).  
 
-LaTeX é um sistema de preparação e composição de documentos amplamente utilizado, especialmente na academia e na pesquisa. Ele permite a criação de documentos de alta qualidade, com formatação profissional, adequados para artigos acadêmicos, relatórios, teses e muito mais. LaTeX é uma escolha popular para estudantes e pesquisadores que desejam criar documentos bem estruturados e consistentes.
+Algumas orientações básicas sobre o uso dos templates e do LaTeX foram incluídas ao longo do documento gerado após a compilação, que pode ser visualizado no arquivo [principal.pdf](https://github.com/cabralgabriel/latex-templates/blob/main/template_tcc/principal.pdf).
 
-## 📚 Modelos Disponíveis
+## Modelos
 
-### 📖 Modelo de TCC
+### TCC 
+A pasta `template_tcc` contém um modelo configurado com os elementos obrigatórios e opcionais para um TCC.  
 
-A pasta `template_tcc` contém um modelo LaTeX para Trabalho de Conclusão de Curso (TCC) que segue as normas da ABNT. Este modelo inclui formatação adequada para capa, folha de rosto, sumário, referências e outros elementos obrigatórios e opcionais para um TCC.
+### PCC
+A pasta `template_pcc` oferece um modelo com os elementos mínimos necessários para a entrega de um PCC.  
 
-### 📝 Modelo de PCC
+##  Instalação
 
-A pasta `template_pcc` oferece um modelo LaTeX para Projetos de Conclusão de Curso (PCC) que também segue as normas da ABNT. Este modelo inclui os elementos mínimos necessários para um PCC.
+1. Clone ou faça o download deste repositório.  
+2. Acesse a pasta correspondente ao modelo desejado (`template_tcc` ou `template_pcc`).  
+3. Abra o arquivo principal (`principal.tex`) e compile o projeto no seu editor LaTeX.  
 
-## 🚀 Como Usar os Modelos
+### Classe abntex2
 
-1. Clone ou faça o download deste repositório.
-
-2. Acesse a pasta correspondente ao modelo que você deseja utilizar (`template_tcc` ou `template_pcc`).
-
-3. Abra o arquivo principal do modelo no seu editor LaTeX preferido (por exemplo, TeXShop, TeXworks, Overleaf, etc.).
-
-4. Personalize o conteúdo do modelo com suas informações, texto, figuras e tabelas.
-
-5. Compile o documento LaTeX para gerar o PDF final. O PDF gerado estará pronto para ser apresentado ou impresso.
+Os templates utilizam a classe **abnTeX2** para garantir conformidade com as normas da ABNT. Caso precise da versão mais recente, siga as instruções de instalação: https://github.com/abntex/abntex2/wiki/Instalacao  
